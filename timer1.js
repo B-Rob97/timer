@@ -1,4 +1,4 @@
-const alarms = process.argv.slice(2);
+const alarms = process.argv.slice(2).filter(num => num > 0).map(Number);
 
 let currentIndex = 0;
 
